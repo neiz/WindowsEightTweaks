@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="WindowsEightTweaks.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsEightTweaks"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+    	<ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="22.256" Margin="367.682,168.241,0,0" VerticalAlignment="Top" Width="632.584"/>
+    	<ToggleSwitch Header="Desktop Shortcut Arrows" HorizontalAlignment="Left" Margin="367.682,465.731,0,0" VerticalAlignment="Top"/>
+    	<ToggleSwitch Header="Metro Start Menu" HorizontalAlignment="Left" Margin="367.682,366.567,0,0" VerticalAlignment="Top"/>
+    	<ToggleSwitch Header="Automatic Login" HorizontalAlignment="Left" Margin="367.682,266.289,0,0" VerticalAlignment="Top"/>
+    	<ToggleSwitch Header="SmartScreen Tracking" HorizontalAlignment="Left" Margin="846.682,266.289,0,0" VerticalAlignment="Top"/>
+    	<Button HorizontalAlignment="Left" Margin="1256,0,0,0" Style="{StaticResource MailAppBarButtonStyle}" VerticalAlignment="Top"/>
+    	<Button HorizontalAlignment="Left" Margin="678.541,611.255,0,0" Style="{StaticResource SaveAppBarButtonStyle}" VerticalAlignment="Top"/>
+    	<Button HorizontalAlignment="Left" Margin="1156,0,0,0" Style="{StaticResource SettingsAppBarButtonStyle}" VerticalAlignment="Top"/>
+    	<Button HorizontalAlignment="Left" Margin="554.866,611.255,0,0" Style="{StaticResource DiscardAppBarButtonStyle}" VerticalAlignment="Top"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="465.73,21.604,0,0" Style="{StaticResource HeaderTextStyle}" TextWrapping="Wrap" Text="Windows 8 Tweaks" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
+
