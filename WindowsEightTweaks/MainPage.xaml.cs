@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Windows;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -39,20 +41,41 @@ namespace WindowsEightTweaks
         {
             //This module checks the registry for the status of registry changes;
             //then (re)initializes their radio control
-            string[] todo;
+            string[] DesktopArrowsData = { "29", "String", "%SystemRoot%\\Blank.ico,0" };
+            string[] AutoLoginData = { "", "", "" };
+            string[] MetroStartData = { "", "", "" };
+            string[] SmartScreenData = { "EnableSmartScreen", "REG_DWORD", "0" };
 
-            if (DesktopArrows.IsOn)
-            {
-               
-            }
-            else if (AutoLogin.IsOn)
-            {
+            DesktopArrows.IsOn = false;
+            AutoLogin.IsOn = false;
+            MetroStart.IsOn = false;
+            SmartScreen.IsOn = false;
 
-            }
-            else if (MetroStart.IsOn)
+            if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Shell Icons", DesktopArrowsData))
             {
-
+                DesktopArrows.IsOn = true;
             }
+
+            if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon", AutoLoginData))
+            {
+                AutoLogin.IsOn = true;
+            }
+
+            if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer", MetroStartData))
+            {
+                MetroStart.IsOn = true;
+            }
+
+            if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System", SmartScreenData))
+            {
+                SmartScreen.IsOn = true;
+            }
+
+        }
+
+        private Boolean RegistryContainsKey(string Key, string[] Values)
+        {
+            return true;
         }
 
         public Nullable<bool> IsChecked { get; set; }
@@ -64,7 +87,42 @@ namespace WindowsEightTweaks
 
         private void SaveApp(object sender, RoutedEventArgs e)
         {
-            //TODO
+            if (DesktopArrows.IsOn)
+            {
+
+            }
+            else if (AutoLogin.IsOn)
+            {
+                RegistryKey key;
+                key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon");
+                key.SetValue("AutoAdminLogon", "1");
+                key.SetValue("DefaultPassword", "Test");
+                key.SetValue("DefaultUsername", "Test");
+                key.Close();
+            }
+            else if (MetroStart.IsOn)
+            {
+                Microsoft.Win32.RegistryKey key;
+                key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon");
+                key.SetValue("GlobalFolderSettings", "{EF8AD2D1-AE36-11D1-B2D2-006097DF8C11}");
+                key.SetValue("LVPopupSearchControl", "{fccf70c8-f4d7-4d8b-8c17-cd6715e37fff}");
+                key.SetValue("FileOpenDialog", "{DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7}");
+                key.SetValue("IconUnderline", "1");
+                key.SetValue("DefaultPassword", "dword:00000002");
+                key.SetValue("ListViewPopupControl", "{8be9f5ea-e746-4e47-ad57-3fb191ca1eed}");
+                key.SetValue("AccessDeniedDialog", "{100B4FC8-74C1-470F-B1B7-DD7B6BAE79BD}");
+                key.SetValue("DefaultStartViewLayout", "dword:00000002");
+                key.SetValue("RPInstalled", "dword:00000000");
+                key.SetValue("RPEnabled", "dword:00000000");
+                key.SetValue("MIEInstallResult", "dword:00000000");
+                key.SetValue("GlobalAssocChangedCounter", "dword:00000002");
+                key.Close();
+
+            }
+            else if (SmartScreen.IsOn)
+            {
+
+            }
         }
 
         private void DiscardApp(object sender, RoutedEventArgs e)

@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WindowsEightTweaks")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Common Tweaks for Windows 8")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Neil Allen")]
 [assembly: AssemblyProduct("WindowsEightTweaks")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
