@@ -12,8 +12,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace WindowsEightTweaks
 {
     /// <summary>
@@ -33,6 +31,50 @@ namespace WindowsEightTweaks
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            progressBar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            CheckRegistry();
+        }
+
+        private void CheckRegistry()
+        {
+            //This module checks the registry for the status of registry changes;
+            //then (re)initializes their radio control
+            string[] todo;
+
+            if (DesktopArrows.IsOn)
+            {
+               
+            }
+            else if (AutoLogin.IsOn)
+            {
+
+            }
+            else if (MetroStart.IsOn)
+            {
+
+            }
+        }
+
+        public Nullable<bool> IsChecked { get; set; }
+
+        private void SendEmail(object sender, RoutedEventArgs e)
+        {
+            //TODO: Send an Email
+        }
+
+        private void SaveApp(object sender, RoutedEventArgs e)
+        {
+            //TODO
+        }
+
+        private void DiscardApp(object sender, RoutedEventArgs e)
+        {
+            progressBar.Visibility = Windows.UI.Xaml.Visibility.Visible;
+        }
+
+        private void SettingsApp(object sender, RoutedEventArgs e)
+        {
+            //TODO
         }
     }
 }

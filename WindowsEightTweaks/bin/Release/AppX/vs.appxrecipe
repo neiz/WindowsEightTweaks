@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>N8</Machine>
+    <WindowsUser>Neil</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>C4161BF144AF5A5C7B59767F5D3300610DAEFE73C035EC1AF2DEFC31F6C4F0B0</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>1241ee87-58af-40ed-b154-db055faffa7f_1.0.0.0_neutral__ehyy81mkd73bt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>1241ee87-58af-40ed-b154-db055faffa7f_ehyy81mkd73bt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>1241ee87-58af-40ed-b154-db055faffa7f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Neil</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-08-25T13:55:08.841</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\WindowsEightTweaks.exe">
+      <PackagePath>WindowsEightTweaks.exe</PackagePath>
+      <Modified>2012-08-25T13:57:46.563</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\WindowsEightTweaks.pdb">
+      <PackagePath>WindowsEightTweaks.pdb</PackagePath>
+      <Modified>2012-08-25T13:57:46.548</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T20:54:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T20:54:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T20:54:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T20:54:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-04-24T00:03:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2012-08-25T13:57:45.785</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-08-24T21:19:17.769</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-08-25T13:55:08.771</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
