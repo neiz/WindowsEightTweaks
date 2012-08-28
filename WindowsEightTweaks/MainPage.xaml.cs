@@ -33,12 +33,13 @@ namespace WindowsEightTweaks
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            progressBar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             CheckRegistry();
         }
 
         private void CheckRegistry()
         {
+            progressBar.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            progressBar.Value = 0;
             //This module checks the registry for the status of registry changes;
             //then (re)initializes their radio control
             string[] DesktopArrowsData = { "29", "String", "%SystemRoot%\\Blank.ico,0" };
@@ -56,26 +57,30 @@ namespace WindowsEightTweaks
                 DesktopArrows.IsOn = true;
             }
 
+            progressBar.Value = progressBar.Value+25;
+
             if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon", AutoLoginData))
             {
                 AutoLogin.IsOn = true;
             }
-
+            progressBar.Value = progressBar.Value + 25;
             if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer", MetroStartData))
             {
                 MetroStart.IsOn = true;
             }
-
+            progressBar.Value = progressBar.Value + 25;
             if (RegistryContainsKey("HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System", SmartScreenData))
             {
                 SmartScreen.IsOn = true;
             }
+            progressBar.Value = progressBar.Value + 25;
 
+          //  progressBar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
 
         private Boolean RegistryContainsKey(string Key, string[] Values)
         {
-            return true;
+            return false;
         }
 
         public Nullable<bool> IsChecked { get; set; }
@@ -89,20 +94,20 @@ namespace WindowsEightTweaks
         {
             if (DesktopArrows.IsOn)
             {
-
             }
+
             else if (AutoLogin.IsOn)
             {
-                RegistryKey key;
+                /*RegistryKey key;
                 key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon");
                 key.SetValue("AutoAdminLogon", "1");
                 key.SetValue("DefaultPassword", "Test");
                 key.SetValue("DefaultUsername", "Test");
-                key.Close();
+                key.Close();*/
             }
             else if (MetroStart.IsOn)
             {
-                Microsoft.Win32.RegistryKey key;
+                /*Microsoft.Win32.RegistryKey key;
                 key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon");
                 key.SetValue("GlobalFolderSettings", "{EF8AD2D1-AE36-11D1-B2D2-006097DF8C11}");
                 key.SetValue("LVPopupSearchControl", "{fccf70c8-f4d7-4d8b-8c17-cd6715e37fff}");
@@ -116,7 +121,7 @@ namespace WindowsEightTweaks
                 key.SetValue("RPEnabled", "dword:00000000");
                 key.SetValue("MIEInstallResult", "dword:00000000");
                 key.SetValue("GlobalAssocChangedCounter", "dword:00000002");
-                key.Close();
+                key.Close();*/
 
             }
             else if (SmartScreen.IsOn)
@@ -127,7 +132,7 @@ namespace WindowsEightTweaks
 
         private void DiscardApp(object sender, RoutedEventArgs e)
         {
-            progressBar.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            CheckRegistry();
         }
 
         private void SettingsApp(object sender, RoutedEventArgs e)

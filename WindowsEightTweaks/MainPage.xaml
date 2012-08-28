@@ -11,13 +11,13 @@
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
     	<ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="22.256" Margin="367.682,168.241,0,0" VerticalAlignment="Top" Width="632.584"/>
     	<ToggleSwitch Name="DesktopArrows" Header="Desktop Shortcut Arrows" HorizontalAlignment="Left" Margin="367.682,465.731,0,0" VerticalAlignment="Top"/>
-        <ToggleSwitch Name="MetroStart" Header="Metro Start Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="847,466,0,0"/>
-        <ToggleSwitch Name="AutoLogin" Header="Automatic Login" HorizontalAlignment="Left" Margin="367.682,266.289,0,0" VerticalAlignment="Top"/>
+    	<ToggleSwitch Name="MetroStart" Header="Metro Start Menu" HorizontalAlignment="Left" Margin="367.682,366.567,0,0" VerticalAlignment="Top"/>
+    	<ToggleSwitch Name="AutoLogin" Header="Automatic Login" HorizontalAlignment="Left" Margin="367.682,266.289,0,0" VerticalAlignment="Top"/>
     	<ToggleSwitch Name="SmartScreen" Header="SmartScreen Tracking" HorizontalAlignment="Left" Margin="846.682,266.289,0,0" VerticalAlignment="Top"/>
-    	<Button HorizontalAlignment="Left" Margin="1256,0,0,0" Style="{StaticResource MailAppBarButtonStyle}" ToolTipService.ToolTip="Send Me an Email" VerticalAlignment="Top" Click="SendEmail"/>
-        <Button HorizontalAlignment="Left" Margin="658,611,0,0" Style="{StaticResource SaveAppBarButtonStyle}" VerticalAlignment="Top" Click="SaveApp"/>
-        <Button HorizontalAlignment="Left" Margin="1156,0,0,0" Style="{StaticResource SettingsAppBarButtonStyle}" VerticalAlignment="Top" Click="SettingsApp"/>
-        <Button HorizontalAlignment="Left" Margin="193,611,0,0" Style="{StaticResource DiscardAppBarButtonStyle}" VerticalAlignment="Top" Click="DiscardApp"/>
+    	<Button HorizontalAlignment="Left" Margin="1256,0,0,0" Style="{StaticResource MailAppBarButtonStyle}" VerticalAlignment="Top"/>
+    	<Button HorizontalAlignment="Left" Margin="678.541,611.255,0,0" Style="{StaticResource SaveAppBarButtonStyle}" VerticalAlignment="Top" Click="SaveApp"/>
+    	<Button HorizontalAlignment="Left" Margin="1156,0,0,0" Style="{StaticResource SettingsAppBarButtonStyle}" VerticalAlignment="Top"/>
+    	<Button HorizontalAlignment="Left" Margin="554.866,611.255,0,0" Style="{StaticResource DiscardAppBarButtonStyle}" VerticalAlignment="Top"/>
     	<TextBlock HorizontalAlignment="Left" Margin="465.73,21.604,0,0" Style="{StaticResource HeaderTextStyle}" TextWrapping="Wrap" Text="Windows 8 Tweaks" VerticalAlignment="Top"/>
     </Grid>
 </Page>

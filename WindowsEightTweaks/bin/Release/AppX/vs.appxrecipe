@@ -5,7 +5,7 @@
     <WindowsUser>Neil</WindowsUser>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>C4161BF144AF5A5C7B59767F5D3300610DAEFE73C035EC1AF2DEFC31F6C4F0B0</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9C33AEAAADA37238483657E1FDF967EF2CB0254414EE86D988C31BDACAACA1DA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1241ee87-58af-40ed-b154-db055faffa7f_1.0.0.0_neutral__ehyy81mkd73bt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1241ee87-58af-40ed-b154-db055faffa7f_ehyy81mkd73bt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1241ee87-58af-40ed-b154-db055faffa7f</RegisteredPackageID>
@@ -16,17 +16,17 @@
     <AppXManifest Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-08-25T13:55:08.841</Modified>
+      <Modified>2012-08-28T17:49:19.245</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\WindowsEightTweaks.exe">
       <PackagePath>WindowsEightTweaks.exe</PackagePath>
-      <Modified>2012-08-25T13:57:46.563</Modified>
+      <Modified>2012-08-28T17:51:56.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\WindowsEightTweaks.pdb">
       <PackagePath>WindowsEightTweaks.pdb</PackagePath>
-      <Modified>2012-08-25T13:57:46.548</Modified>
+      <Modified>2012-08-28T17:51:56.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -54,7 +54,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2012-08-25T13:57:45.785</Modified>
+      <Modified>2012-08-28T17:31:39.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\Sites\WindowsEightTweaks\WindowsEightTweaks\bin\Release\App.xaml">
       <PackagePath>App.xaml</PackagePath>

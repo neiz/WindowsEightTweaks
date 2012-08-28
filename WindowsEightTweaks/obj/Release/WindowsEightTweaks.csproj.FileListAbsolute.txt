@@ -21,3 +21,7 @@ c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\resources.resfiles
 c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\pri.resfiles
 c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\LanguageQualifiers.txt
 c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\ProjectArchitectures.txt
+c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\priconfig.xml.intermediate
+c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\layout.resfiles.intermediate
+c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\resources.resfiles.intermediate
+c:\Sites\WindowsEightTweaks\WindowsEightTweaks\obj\Release\pri.resfiles.intermediate
